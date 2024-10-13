@@ -17,4 +17,32 @@ Example 2:
 
 Input: nums = [2,2,1,1,1,2,2]
 Output: 2
- 
+ ```
+ class Solution {
+    public int majorityElement(int[] nums) {
+        int element = 0 ;
+        int count =0;
+        for(int i = 0;i<nums.length;i++){
+            if(count == 0){
+                count++;
+                element = nums[i];
+            }else if(element == nums[i]){
+                count++;
+            }else{
+                count--;
+            }
+        }
+        int count1 = 0;
+        for(int j =0;j<nums.length;j++){
+            if(element == nums[j]){
+                count1++;
+            }
+            if(count1> (nums.length)/2){
+                return nums[j];
+            }
+
+        }
+        return -1;
+    }
+}
+ ```
