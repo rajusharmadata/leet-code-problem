@@ -1,84 +1,95 @@
 {
-  // 🔤 Typography & Readability
-  "editor.fontSize": 16,
-  "editor.fontFamily": "Cascadia Code, Fira Code, JetBrains Mono",
-  "editor.fontLigatures": "'ss01', 'ss02', 'calt'",
-  "editor.lineHeight": 26,
-  "editor.letterSpacing": 0.5,
-  "editor.fontWeight": "400",
-
-  // 🚀 Performance Optimization
-  "editor.minimap.enabled": false,
-  "editor.lineNumbers": "relative",
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.enablePreview": ,
-
-  // 🎨 UI Customization
-  "workbench.colorTheme": "One Dark Pro Flat",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left",
-  "workbench.statusBar.visible": true,
-  "workbench.activityBar.location": "default",
-
-  // 📁 File Management
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.exclude": {
+    // 🔤 Typography & Readability
+    // Configure how the editor looks in terms of text and spacing
+    "editor.fontSize": 20,                              // Text size in the editor
+    "editor.fontFamily": "Cascadia Code, Fira Code, JetBrains Mono", // Fonts for the editor
+    "editor.fontLigatures": "'ss01', 'ss02', 'calt'",  // Enable font ligatures for improved readability
+    "editor.lineHeight": 26,                           // Space between lines
+    "editor.letterSpacing": 0.5,                       // Adjust spacing between letters
+    "editor.fontWeight": "450",                        // Weight of the font for a balanced look
+  
+    // 🚀 Performance Optimization
+    // Settings to make VS Code faster and cleaner
+    "editor.minimap.enabled": false,                   // Disable the minimap for better performance
+    "editor.lineNumbers": "relative",                  // Show relative line numbers for easier navigation
+    "editor.renderLineHighlight": "gutter",            // Highlight the line number of the current line
+    "workbench.editor.enablePreview": false,           // Open files directly instead of preview mode
+  
+    // 🎨 UI Customization
+    // Personalize the look and feel of the editor
+    "workbench.colorTheme": "One Dark Pro Flat",       // Set a dark theme for the editor
+    "workbench.iconTheme": "material-icon-theme",      // Use modern icons for files and folders
+    "workbench.sideBar.location": "left",              // Sidebar on the left for easy access
+    "workbench.statusBar.visible": true,               // Show the status bar at the bottom
+    "workbench.activityBar.location": "default",       // Keep the activity bar in its default location
+  
+    // 📁 File Management
+    // Automatically handle and clean up files
+    "files.autoSave": "afterDelay",                    // Save files automatically after a short delay
+    "files.autoSaveDelay": 1000,                       // Delay in milliseconds before auto-save
+    "files.trimTrailingWhitespace": true,              // Remove unnecessary spaces at the end of lines
+    "files.insertFinalNewline": true,                  // Ensure files end with a blank line
+    "files.exclude": {                                 // Exclude unwanted files and folders from the explorer
       "**/.git": true,
       "**/.svn": true,
       "**/.hg": true,
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/Thumbs.db": true
-  },
-
-  // 🔍 Search Optimization
-  "search.exclude": {
-      "**/node_modules": true,
-      "**/dist": true,
+    },
+  
+    // 🔍 Search Optimization
+    // Improve the search experience by excluding unnecessary folders
+    "search.exclude": {
+      "**/node_modules": true,                         // Exclude node_modules
+      "**/dist": true,                                 // Exclude build output directories
       "**/build": true,
       "**/vendor": true,
-      "**/.next": true,
-      "**/.nuxt": true
-  },
-
-  // 💻 Coding Experience
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "editor.linkedEditing": true,
-  "editor.wordWrap": "on",
-  "editor.guides.indentation": false,
-  "editor.renderWhitespace": "boundary",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on",
-
-  // 🧠 Intelligence & Suggestions
-  "editor.quickSuggestions": {
-      "comments": false,
-      "strings": true,
-      "other": true
-  },
-  "editor.suggestSelection": "first",
-  "editor.snippetSuggestions": "top",
-
-  // 🌐 Language & Emmet Support
-  "emmet.includeLanguages": {
-      "vue-html": "html",
-      "blade": "html",
-      "react": "html",
-      "javascript": "html"
-  },
-
-  // 🖥️ Terminal Enhancements
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.4,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true,
-
-  // 🔒 Security & Performance
-  "security.workspace.trust.untrustedFiles": "open",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
-}
+      "**/.next": true,                                // Exclude Next.js build files
+      "**/.nuxt": true                                 // Exclude Nuxt.js build files
+    },
+  
+    // 💻 Coding Experience
+    // Enhance your coding productivity and editor behavior
+    "editor.formatOnSave": true,                       // Automatically format code when saving
+    "editor.formatOnType": true,                       // Format code as you type
+    "editor.linkedEditing": true,                      // Simultaneously edit matching tags
+    "editor.wordWrap": "on",                           // Wrap long lines automatically
+    "editor.guides.indentation": false,                // Disable indentation guides
+    "editor.renderWhitespace": "boundary",             // Highlight only boundary whitespace
+    "editor.cursorBlinking": "smooth",                 // Smooth cursor blinking animation
+    "editor.cursorSmoothCaretAnimation": "on",         // Enable smooth movement of the cursor
+  
+    // 🧠 Intelligence & Suggestions
+    // Configure IntelliSense for better coding assistance
+    "editor.quickSuggestions": {                       // Enable suggestions for code elements
+      "comments": false,                               // Disable suggestions in comments
+      "strings": true,                                 // Enable suggestions in strings
+      "other": true                                    // Enable suggestions for other code
+    },
+    "editor.suggestSelection": "first",                // Automatically select the first suggestion
+    "editor.snippetSuggestions": "top",                // Show code snippets at the top of suggestions
+  
+    // 🌐 Language & Emmet Support
+    // Add Emmet and language-specific customizations
+    "emmet.includeLanguages": {
+      "vue-html": "html",                              // Treat Vue files as HTML for Emmet
+      "blade": "html",                                 // Enable Emmet in Blade templates
+      "react": "html",                                 // Enable Emmet in React files
+      "javascript": "html"                             // Use Emmet in JavaScript files
+    },
+  
+    // 🖥️ Terminal Enhancements
+    // Customize the terminal experience
+    "terminal.integrated.fontSize": 14,                // Font size in the terminal
+    "terminal.integrated.lineHeight": 1.4,             // Line spacing in the terminal
+    "terminal.integrated.cursorStyle": "line",         // Cursor style in the terminal
+    "terminal.integrated.cursorBlinking": true,        // Enable cursor blinking in the terminal
+  
+    // 🔒 Security & Performance
+    // Ensure a secure and efficient workspace
+    "security.workspace.trust.untrustedFiles": "open", // Allow opening untrusted files
+    "typescript.updateImportsOnFileMove.enabled": "always", // Auto-update imports on TypeScript file moves
+    "javascript.updateImportsOnFileMove.enabled": "always"  // Auto-update imports on JavaScript file moves
+  }
+  
