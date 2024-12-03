@@ -1,0 +1,84 @@
+{
+  // 🔤 Typography & Readability
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Cascadia Code, Fira Code, JetBrains Mono",
+  "editor.fontLigatures": "'ss01', 'ss02', 'calt'",
+  "editor.lineHeight": 26,
+  "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "400",
+
+  // 🚀 Performance Optimization
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.enablePreview": ,
+
+  // 🎨 UI Customization
+  "workbench.colorTheme": "One Dark Pro Flat",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.location": "default",
+
+  // 📁 File Management
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+  },
+
+  // 🔍 Search Optimization
+  "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/vendor": true,
+      "**/.next": true,
+      "**/.nuxt": true
+  },
+
+  // 💻 Coding Experience
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // 🧠 Intelligence & Suggestions
+  "editor.quickSuggestions": {
+      "comments": false,
+      "strings": true,
+      "other": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "top",
+
+  // 🌐 Language & Emmet Support
+  "emmet.includeLanguages": {
+      "vue-html": "html",
+      "blade": "html",
+      "react": "html",
+      "javascript": "html"
+  },
+
+  // 🖥️ Terminal Enhancements
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+
+  // 🔒 Security & Performance
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
